@@ -10,23 +10,23 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: hsl(212, 45%, 89%);
+  justify-content: center; /*justificado centrado*/
+  align-items: center; /* alineacion centrica */
+  height: 100vh; /*altura*/
+  background-color: hsl(212, 45%, 89%); /*color de fondo*/
 }
 
 .box {
   background-color: #ffffff;
-  padding: 15px;
-  border-radius: 25px;
-  width: 20%;
+  padding: 15px; /*espacio entre la imagen y el texto*/
+  border-radius: 25px; /*redondeo el objeto*/
+  width: 20%; /*ancho */
   text-align: center;
 }
 
 .img {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 16px;   
 }
 /* 100 - 900 */
 /* parrafos: 400 */

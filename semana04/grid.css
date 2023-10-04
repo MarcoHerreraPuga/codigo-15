@@ -23,7 +23,7 @@ body {
 */
 .container{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas: /*lo voy a usar para maquetar*/
     "cabecera navegacion navegacion navegacion"
     "hero hero hero hero"
     "main main empty image"
@@ -31,10 +31,19 @@ body {
     "banner banner banner banner";
 }
 
+.centrado{
+    display: flex;
+    font-size:x-large;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .header {
     background-color: rgb(26,26,57);
-    grid-area: cabecera;
-    height: 5vh;
+    grid-area: cabecera; /*para enlazar con grid template area*/
+    height: 5vh; /*establece la altura */
+    
 }
 
 .menu{
@@ -75,3 +84,95 @@ body {
     height: 10vh;
 }
 
+@media only screen and (max-width: 600px) {
+
+   
+
+    .header {
+        background-color: rgb(26,26,57);
+        grid-area: cabecera; /*para enlazar con grid template area*/
+        height: 10vh;
+               
+    }
+    
+    .menu{
+        background-color: rgb(252,73,73);
+        grid-area: navegacion;
+        height: 10vh;
+        
+    }
+    
+    .hero{
+        background-color: skyblue;
+        grid-area: hero;
+        height: 20vh;
+      
+        
+      
+    }
+    
+    .main{
+        background-color:  rgb(26,26,57);
+        grid-area: main;
+        height: 20vh;
+      
+      
+    }
+
+    .banner{
+        background-color: rgb(207, 88, 33);
+        grid-area: banner;
+        height: 15vh;
+       
+        
+    }
+    
+    .extra{
+        background-color: rgb(92, 167 , 92);
+        grid-area: extra;
+        height: 15vh;
+        
+    }
+
+       
+    .image{
+        background-color: rgb(201, 255, 201);
+        color: #000;
+        grid-area: image;
+        height: 15vh;
+        
+    }
+    
+    
+    .empty{
+        background-color: #fff;
+        grid-area: empty;
+    }
+    
+    .centrado{
+        display: flex;
+        font-size:x-large;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+
+
+    .container{
+        
+     
+        display: grid;
+        grid-template-areas: /*lo voy a usar para maquetar*/
+        "cabecera"
+        "navegacion"
+        "hero"
+        "main"
+        "banner"
+        "extra"
+        "image"
+        "empty"
+        ;
+    }
+    
+}

@@ -96,20 +96,20 @@
   }
   
   .container__input {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+    display: flex;  /* La propiedad display se utiliza para establecer el tipo de visualización del elemento. En este caso, se establece en "flex", lo que convierte al elemento en un contenedor de flexbox. */
+    flex-direction: column; /* Cuando se establece en "column", los elementos hijos se colocan en una columna de arriba a abajo. */
+    margin-top: 20px; /* La propiedad margin-top en CSS se utiliza para establecer el margen superior de un elemento. */
   }
   
   .container__input > input {
     font-family: "Ubuntu", sans-serif;
-    padding: 12.5px;
+    padding: 12.5px;/*  La propiedad padding en CSS se utiliza para establecer el relleno, que es la cantidad de espacio entre el contenido del elemento y su borde. */
     font-size: 16px;
-    border: solid 1px hsl(229, 24%, 87%);
-    border-radius: 6px;
-    outline: none;
-    cursor: pointer;
+    border: solid 1px hsl(229, 24%, 87%); /*bordes continuo de un color*/
+    border-radius: 6px; /* radio de las esquinas del borde de un elemento, lo que determina cuán redondeadas o suavizadas estarán las esquinas. */
+    outline: none; /* sin contorno alrededor de un elemento. */
+    cursor: pointer; /*Se utiliza para cambiar la apariencia del cursor del mouse cuando está sobre un elemento interactivo.
+    Al establecer cursor en "pointer", el cursor del mouse se cambiará a una forma de puntero.*/
   }
   
   .container__input > span {
@@ -134,6 +134,7 @@
     border-radius: 6px;
   }
   
+  /*only screen indica que estos estilos se aplicarán solo a pantallas (dispositivos de visualización).*/
   @media only screen and (max-width: 600px) {
     .p-25 {
       padding: 0;
@@ -155,7 +156,7 @@
       flex-direction: column;
       width: 100%;
       border-radius: 0;
-      gap: 0;
+      gap: 0; /* establece que no habrá espacio entre los elementos dentro del contenedor de cuadrícula o flexbox */
       background-color: hsl(229, 24%, 87%);
       height: 100vh;
     }
