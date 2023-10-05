@@ -3,37 +3,68 @@
     padding: 0;
   }
   
+  /* colocamos la fuente de texto */
   body {
     font-family: "Alata", sans-serif;
   }
   
   .principal__section {
     background: url("../assets/desktop/image-hero.jpg");
+    
     background-repeat: no-repeat;
+    /*para q la foto no se repita*/
     background-size: cover;
+    /*para qie cubra todo el ancho de la pantalla*/
     padding: 60px;
     font-family: "Josefin Sans", sans-serif;
   }
   
   .nav {
+     
     display: flex;
+    /* Flexbox es un diseño de caja que permite organizar 
+    elementos hijos dentro de un contenedor */
     justify-content: space-between;
+   /* Con "justify-content: space-between;", 
+    los elementos flexibles se colocarán de manera 
+    que el primer elemento se alinee al inicio del 
+    contenedor, el último elemento se alinee al final 
+    del contenedor */
     align-items: center;
+    /* Con "align-items: center;" 
+    los elementos flexibles dentro del contenedor flex
+    se alinearán en el centro vertical del contenedor. 
+    Si el contenedor tiene una altura definida,
+    esto resultará en la alineación central de los
+    elementos secundarios en esa altura. */
   }
   
   .nav__list {
     display: flex;
     list-style: none;
+    /* Elimina los marcadores o viñetas de lista 
+    en elementos de lista, proporcionando un estilo más limpio
+    y personalizado para la lista. */
     gap: 25px;
+    /* 25 píxeles entre los elementos secundarios 
+    dentro de un contenedor flex  */
     color: #fff;
   }
   
   .hero > div {
+    
     border: solid #fff;
+    /* crea un borde sólido con el color blanco 
+    alrededor del elemento al que se aplica */
     padding: 20px;
     width: 25%;
     margin-top: 100px;
+    /* "margin-top" controla el espacio entre el 
+    borde superior del elemento y el elemento adyacente  */
     word-wrap: break-word;
+    /* permite que las palabras o cadenas de texto largas 
+    se rompan y se muestren en múltiples líneas dentro de un 
+    contenedor  */
   }
   
   .hero > div > h1 {
@@ -50,16 +81,29 @@
   .article__section {
     display: flex;
     justify-content: space-between;
+    /* space-between: Es un valor de la propiedad justify-content 
+    que distribuye el espacio disponible de manera uniforme entre 
+    los elementos hijos */
     margin-top: 60px;
+    /* margen superior  */
+
     margin-bottom: 60px;
+    /* margen inferior (espacio en blanco)  */
   }
   
   .article__container {
     align-self: end;
+    /* end: Es el valor de la propiedad align-self 
+    que indica que el elemento debe alinearse al final 
+    del contenedor en el eje transversal. */
     width: 35%;
     margin-left: -150px;
     background-color: #fff;
     padding: 60px 60px 0 60px;
+    /*  60px para arriba (top).
+        60px para la derecha (right).
+        0 para abajo (bottom).
+        60px para la izquierda (left). */
   }
   
   .article__container h2 {
@@ -84,6 +128,8 @@
     background-color: #fff;
     border: solid 1px #000;
     text-transform: uppercase;
+    /* Este valor indica que el 
+    texto debe mostrarse en letras mayúsculas. */
     letter-spacing: 3px;
     padding: 10px 30px;
   }
@@ -96,9 +142,17 @@
   .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* está definiendo cuatro columnas, 
+    cada una con un tamaño fraccionado (1 fr). 
+    La función repeat se utiliza para repetir 
+    este patrón de tamaño de columna cuatro veces. */
     grid-template-rows: repeat(2, 40vh);
+    /* está definiendo dos filas, cada una con un tamaño 
+    del 40% de la altura de la ventana gráfica  */
     justify-content: space-between;
     gap: 20px;
+    /* spacio entre las filas y 
+    columnas en un diseño de cuadrícula. */
   }
   
   .gallery div {
@@ -113,6 +167,9 @@
   .gallery div:hover {
     color: #000;
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.8);
+    /*Aplicar sombras a un elemento
+    inset: Indica que la sombra debe estar dentro del contorno
+    */
   }
   
   .earth {
@@ -216,7 +273,12 @@
   
     .gallery {
       grid-template-columns: 1fr;
+      /* está definiendo una sola columna 
+      con un tamaño fraccionado (1 fr) */
       grid-template-rows: repeat(8, 15vh);
+      /* stá definiendo ocho filas, cada una 
+      con un tamaño del 15% de la altura de la 
+      ventana gráfica  */
       margin: 20px;
     }
   
